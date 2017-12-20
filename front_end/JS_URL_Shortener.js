@@ -1,12 +1,4 @@
-// function Shorten() {
-//   /*
-//   TODO: to shorten the url, make a server request
-//   TODO: add the original and shortened url with the copy button to the table
 //   TODO: change the button and its function
-//   */
-// }
-function CopyFunction(n) {
-
 
 $(document).ready(function() {
   var numOfURLs = 0;
@@ -16,6 +8,7 @@ $(document).ready(function() {
     numOfURLs += 1;
     n = numOfURLs.toString();
     var orgURL = $("input:text").val();
+    //   TODO: to shorten the url, make a server request
     srtURL = function(orgURL) {
 
       return;
