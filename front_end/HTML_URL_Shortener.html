@@ -11,25 +11,22 @@
   <link rel="stylesheet" href="CSS_URL_Shortener.css">
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 
-  <script type="text/javascript" src="JS_URL_Shortener.js"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script src="jquery-3.2.1.min.js"></script>
-  <script src="jquery.js"></script>
+  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+  <!-- <script type="text/javascript" src="JS_URL_Shortener.js"></script> -->
+  <script type="text/javascript" src="jq.js"></script>
 </head>
 
 <body>
   <div class="container">
     <div id="input">
       <!-- Form will be displayed in this div -->
-      <h1><big>URL Shortener</big></h1>
-      <form action="">
-        <div class="input-group input-group-lg col-xs-9" id="indata">
-          <!-- form container -->
-          <input type="text" placeholder="http://....." class="form-control center">
-          <button id="ShortCopy" class="col-xs-2">Shorten</button>
-        </div>
-      </form>
+      <h1>URL Shortener</h1>
+      <div class="input-group input-group-lg col-xs-9" id="indata">
+        <!-- form container -->
+        <input type="text" placeholder="http://....." class="form-control center">
+        <button id="clear" class="col-xs-2">Clear</button>
+        <button id="short" class="col-xs-2 in">Shorten</button>
+      </div>
     </div>
 
     <div class="col-xs-10 table-responsive" id="table">
@@ -42,7 +39,6 @@
           </tr>
         </thead>
         <tbody>
-
         </tbody>
       </table>
     </div>
